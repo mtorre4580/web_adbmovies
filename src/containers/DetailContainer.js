@@ -33,6 +33,15 @@ export default compose(
       componentDidMount () {
         this.props.getDetail(this.props.type,this.props.match.params.id);
         this.props.getRecommendations(this.props.type,this.props.match.params.id);
+      },
+      componentWillUpdate (nextProps, nextState) {
+        let id = nextProps.match.params.id;
+        if(this.props.match.params.id !== id){
+            this.props.getDetail(this.props.type,id);
+            this.props.getRecommendations(this.props.type,id);
+          return true;
+        }
+        return false;
       }
     })
 )(Detail);
