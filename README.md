@@ -20,5 +20,8 @@ https://www.linkedin.com/in/mtorre4580/
   services --> Apis utilizadas localStorage , peliculas DBApi
   
 # Tecnologías
- React, Redux, Redux Form, React Router
+ React, Redux, Redux Form, React Router, StyledComponents
+ 
+# Observaciones
+ Falta corregir algunas cosas mas, el contador de los favoritos , el detalle de las peliculas en las recommendations.., etc
  
