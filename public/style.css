@@ -1,0 +1,191 @@
+.mdi::before {
+    font-size: 24px;
+    line-height: 14px;
+}
+.btn .mdi::before {
+    position: relative;
+    top: 4px;
+}
+.btn-xs .mdi::before {
+    font-size: 18px;
+    top: 3px;
+}
+.btn-sm .mdi::before {
+    font-size: 18px;
+    top: 3px;
+}
+.dropdown-menu .mdi {
+    width: 18px;
+}
+.dropdown-menu .mdi::before {
+    position: relative;
+    top: 4px;
+    left: -8px;
+}
+.nav .mdi::before {
+    position: relative;
+    top: 4px;
+}
+.navbar .navbar-toggle .mdi::before {
+    position: relative;
+    top: 4px;
+    color: #FFF;
+}
+.breadcrumb .mdi::before {
+    position: relative;
+    top: 4px;
+}
+.breadcrumb a:hover {
+    text-decoration: none;
+}
+.breadcrumb a:hover span {
+    text-decoration: underline;
+}
+.alert .mdi::before {
+    position: relative;
+    top: 4px;
+    margin-right: 2px;
+}
+.input-group-addon .mdi::before {
+    position: relative;
+    top: 3px;
+}
+.navbar-brand .mdi::before {
+    position: relative;
+    top: 2px;
+    margin-right: 2px;
+}
+.list-group-item .mdi::before {
+    position: relative;
+    top: 3px;
+    left: -3px
+}
+.py-5.bg-light {
+    min-height: calc(100vh - 56px);
+}
+.items-section {
+    position: relative;
+}
+.items-section + .items-section {
+    margin-top: 30px;
+}
+.items-section-title a {
+    font-size: .7em;
+}
+.items-section-body {
+    position: relative;
+    min-height: 271px;
+}
+.grid-item {
+    display: block;
+    position: relative;
+    margin-bottom: 30px;
+}
+.grid-item-body {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .5);
+    text-align: center;
+}
+.grid-item:hover {
+    cursor: pointer;
+}
+.grid-item:hover .grid-item-body {
+    visibility: visible;
+    opacity: 1;
+}
+.grid-item-title {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+}
+.grid-item-date {
+    color: #ffffff;
+}
+.detail-section {
+    margin-bottom: 40px;
+}
+.filters-bar {
+    display: flex;
+    margin-bottom: 20px;
+}
+.filters-bar-left {
+    flex: 1;
+    display: flex;
+    max-width: 60%;
+}
+.filters-bar-left .form-control {
+    margin-right: 15px;
+    flex-basis: 33%;
+}
+.filters-bar-left .btn {
+    margin-right: 15px;
+}
+.filters-bar-right {
+    margin-left: auto;
+}
+.list-item {
+    display: flex;
+    margin-bottom: 30px;
+}
+.list-item-img {
+    max-width: 180px;
+}
+.list-item-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #eee;
+    padding: 15px;
+}
+.list-item-title {}
+.list-item-description {}
+
+.btn-primary{
+    color: #fff !important;
+}
+
+.list-item-actions {
+    display: flex;
+    justify-content: space-between;
+}
+.dimmer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, .5);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+.loading {
+    animation: spin 1s infinite linear;
+    -moz-animation: spin 1s infinite linear;
+    -webkit-animation: spin 1s infinite linear;
+}
