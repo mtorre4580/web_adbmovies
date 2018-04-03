@@ -26,6 +26,14 @@ export default compose(
     lifecycle({
       componentDidMount () {
         this.props.search(this.props.match.params.query);
+      },
+      componentWillUpdate (nextProps, nextState) {
+        let query = nextProps.match.params.query;
+        if(this.props.match.params.query !== query){
+          this.props.search(query);
+          return true;
+        }
+        return false;
       }
     })
 )(Search);

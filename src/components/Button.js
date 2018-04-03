@@ -15,7 +15,7 @@ const addClasses = (type,active) => cx({
     'btn-primary' : type === 'primary',
     'btn-secondary' : type === 'secondary',
     'btn-light' : type === 'light',
-    'btn outline-dark' : type === 'outline-dark',
+    'btn-outline-dark' : type === 'outline-dark',
     'active' : active
 });
 
