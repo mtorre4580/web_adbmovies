@@ -1,27 +1,14 @@
-# dh_react_entrega_final
+# web_advmovies
 
-Developer : Torre Matias Daniel
+App with react to retrieve info for movies
 
-https://www.linkedin.com/in/mtorre4580/
 
-# Instalación
+# Install
 
-1) Bajar el repo
-2) Instalar dependencias npm install
-3) Levantar el servidor npm start
+- ``npm install``
 
-# Carpeta src
-
-  actions --> Contiene los Actions para redux (Detail,Home,Movie,MyList,Search,Series)
-  components --> Componentes puros de react
-  constants --> Los nombres de los actions que se usan ...
-  containers --> Los containers de redux creados ...
-  reducers --> Los reducers de la app
-  services --> Apis utilizadas localStorage , peliculas DBApi
+- ``npm start``
   
-# Tecnologías
+# Stack
  React, Redux, Redux Form, React Router, StyledComponents, PropTypes, classnames
- 
-# Observaciones
- Fix contador de los favoritos
  
